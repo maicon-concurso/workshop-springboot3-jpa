@@ -30,7 +30,7 @@ public class User implements Serializable {
 		// Construtor padrão (sem parâmetros), usado quando não se quer inicializar a classe com valores iniciais.
 	}
 
-	public User(long id, String name, String email, String phone, String password) {
+	public User(Long id, String name, String email, String phone, String password) {
 		super(); 
 		// Chama o construtor da classe pai (neste caso, Object). 
 		// No entanto, como User não está herdando nenhuma outra classe específica, não haveria necessidade explícita de chamar super().

@@ -14,8 +14,8 @@ public class UserResource {
     @GetMapping  // Mapeia requisições GET (quando o cliente pede dados) para o método abaixo.
     public ResponseEntity<User> findAll() {
     	
-        // Cria um objeto User com dados fictícios.
-        User u = new User(1L, "Maria", "maria@gmail", "999999", "123456789");
+         Cria um objeto User com dados fictícios.
+         User u = new User(1L, "Maria", "maria@gmail", "999999", "123456789");
 
         // Retorna uma resposta HTTP 200 (OK) com o objeto User no corpo da resposta.
         // ResponseEntity é uma classe do Spring usada para personalizar a resposta HTTP.
