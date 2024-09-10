@@ -3,11 +3,21 @@ package com.maicon_estudos.curso.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "tb_user")
 public class User implements Serializable {
 // Declaração da classe pública "User". Esta classe será usada para representar os dados de um usuário.
 	
 	private static final long serialVersionUID = 1L;
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id; 
 	// Atributo privado "id" do tipo Long, que provavelmente será o identificador único do usuário no banco de dados.
 	
