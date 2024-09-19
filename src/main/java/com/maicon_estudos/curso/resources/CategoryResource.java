@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.maicon_estudos.curso.entities.Category;
 import com.maicon_estudos.curso.services.CategoryService;
 
-@RestController  // Indica que esta classe é um controlador REST, responsável por tratar requisições HTTP.
+@RestController  // Isso  Indica que esta classe é um controlador REST, responsável por tratar requisições HTTP.
 @RequestMapping(value="/categories/")  // Define a URL base que serhttps://desktop.postman.com/?desktopVersion=11.11.0&userId=38133108&teamId=0&region=usá usada para acessar os endpoints deste controlador. Neste caso, /users.
 public class CategoryResource {
 
