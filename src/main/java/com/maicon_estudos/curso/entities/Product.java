@@ -16,7 +16,6 @@ import jakarta.persistence.Transient;
 @Table (name = "tb_product")
 public class Product implements Serializable {
 	private static final long serialVersonUID = 1L;
-	
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
