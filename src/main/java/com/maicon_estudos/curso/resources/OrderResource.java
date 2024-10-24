@@ -13,7 +13,7 @@ import com.maicon_estudos.curso.entities.Order;
 import com.maicon_estudos.curso.services.OrderService;
 
 @RestController  
-@RequestMapping(value="/orders") 
+@RequestMapping(value="/orders/") 
 public class OrderResource {
 
 	@Autowired

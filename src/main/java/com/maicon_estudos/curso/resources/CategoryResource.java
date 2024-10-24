@@ -13,7 +13,7 @@ import com.maicon_estudos.curso.entities.Category;
 import com.maicon_estudos.curso.services.CategoryService;
 
 @RestController   
-@RequestMapping(value= "/categories") 
+@RequestMapping(value= "/categories/") 
 public class CategoryResource {
 
 	@Autowired

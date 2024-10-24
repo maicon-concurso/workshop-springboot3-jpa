@@ -13,7 +13,7 @@ import com.maicon_estudos.curso.entities.Product;
 import com.maicon_estudos.curso.services.ProductService;
 
 @RestController
-@RequestMapping(value= "/products")
+@RequestMapping(value= "/products/")
 public class ProductResource {
 
 	@Autowired
