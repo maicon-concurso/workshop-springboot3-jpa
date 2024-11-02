@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.maicon_estudos.curso.entities.User;
 import com.maicon_estudos.curso.repositories.UserRepository;
+import com.maicon_estudos.curso.services.exceptions.ResouceNotFoundException;
 
 @Service
 public class UserService {
@@ -21,7 +22,7 @@ public class UserService {
 	
 	public User findById(Long id) {
 		Optional<User> obj = repository.findById(id);
-		return obj.get();
+		return obj.orElseThrow(() -> new ResouceNotFoundException(id));
 	}
 	public User insert(User obj){
 		return repository.save(obj);
