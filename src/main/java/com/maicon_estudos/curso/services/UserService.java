@@ -13,6 +13,8 @@ import com.maicon_estudos.curso.repositories.UserRepository;
 import com.maicon_estudos.curso.services.exceptions.DatabaseException;
 import com.maicon_estudos.curso.services.exceptions.ResouceNotFoundException;
 
+import jakarta.persistence.EntityNotFoundException;
+
 @Service
 public class UserService {
 
@@ -44,18 +46,18 @@ public class UserService {
 
 	}
 
-	/*public User update(Long id, User obj) {
+	public User update(Long id, User obj) {
 		try {
 
 			User entity = repository.getReferenceById(id);
 			updateData(entity, obj);
 			return repository.save(entity);
 
-		} catch (RuntimeException e) {
-			e.printStackTrace();
-			//throw new ResourceNotFoundException(id);
+		} catch (EntityNotFoundException e) {
+			
+			throw new ResouceNotFoundException(id);
 		}
-	}*/
+	}
 
 	private void updateData(User entity, User obj) {
 		entity.setName(obj.getName());
